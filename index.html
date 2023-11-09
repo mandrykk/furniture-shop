@@ -6,10 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Furniture Store</title>
+    <link rel="shortcut icon" href="./images/chair-solid.svg" type="image/svg" />
 </head>
 <body>
     <div class="section__container logo__header">
-        <img src="./images/logo.png" alt="logo" width="200">
+        <a class="logo" href="index.html">FURNITURE STORE</a>
         <div class="contact__us">
             <a href="mailto:info@furniturestore.com"><i class="ri-mail-fill"></i>info@furniturestore.com</a>
             <a href="tel:+450098700008"><i class="ri-phone-fill"></i>+450098700008</a>
@@ -135,11 +136,11 @@
             <div class="section__header">
                 <div class="section__title">BEST SELLER</div>
                 <div class="seller__nav">
-                    <span><i class="ri-arrow-left-s-line"></i></span>
-                    <span><i class="ri-arrow-right-s-line"></i></span>
+                    <span class="prev"><i class="ri-arrow-left-s-line"></i></span>
+                    <span class="next"><i class="ri-arrow-right-s-line"></i></span>
                 </div>
             </div>
-            <div class="seller__grid">
+            <div class="seller__grid" id="sellerGrid">
                 <div class="seller__card">
                     <img src="./images/seller-1.jpg" alt="seller">
                     <div class="seller__card__details">
@@ -302,15 +303,17 @@
     <footer>
         <div class="section__container footer__container">
             <div class="footer__col">
-                <img src="./images/logo.png" alt="logo" width="200" />
+                <h4>
+                    <a class="logo" href="index.html">FURNITURE STORE</a>
+                </h4>
                 <p>
                     Find a wide range of high-quality furniture pieces that will elevate
                     the style and functionality of your home.
                 </p>
                 <p><i class="ri-phone-fill"></i>+450098700008</p>
                 <p>
-                    <i class="ri-map-pin-2-fill"></i> Manipur, House-01, Mirpur-11.5
-                    Bhaka-1258
+                    <i class="ri-map-pin-2-fill"></i>
+                    Livat, King Street, Hammersmith, London W6
                 </p>
             </div>
             <div class="footer__col">

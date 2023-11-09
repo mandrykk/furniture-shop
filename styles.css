@@ -5,6 +5,7 @@
     --primary-color-dark: #fbbf24;
     --secondary-color: #2a80b3;
     --text-dark: #333333;
+    --text-logo: #000000;
     --text-light: #f5f5f5;
     --white: #ffffff;
     --max-width: 1200px;
@@ -59,6 +60,11 @@ img {
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-dark)
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--text-logo);
 }
 
 .logo__header {
@@ -293,6 +299,11 @@ header {
 
 .seller__card {
     cursor: pointer;
+    display: none;
+}
+
+.seller__card.visible {
+    display: block;
 }
 
 .seller__card__details {
@@ -421,4 +432,53 @@ footer {
     text-align: center;
     color: var(--white);
     background-color: var(--primary-color);
+}
+
+@media (width < 900px) {
+    .banner__1__container {
+        gap: 3rem;
+    }
+
+    .arrivals__grid,
+    .blog__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .seller__grid,
+    .product__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .product__image:nth-child(1) {
+        grid-area: unset;
+    }
+
+    .product__image:nth-child(2) {
+        grid-area: 1/1/2/4;
+    }
+}
+
+@media (width < 600px) {
+    .banner__2__container h2 {
+        font-size: 4rem;
+    }
+
+    .seller__grid,
+    .product__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product__image:nth-child(2) {
+        grid-area: unset;
+    }
+
+    .blog__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
